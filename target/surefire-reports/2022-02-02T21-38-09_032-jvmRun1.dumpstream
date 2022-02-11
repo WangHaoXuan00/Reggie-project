@@ -1,0 +1,73 @@
+# Created at 2022-02-02T21:38:19.651
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+# Created at 2022-02-02T21:38:26.598
+Unexpected IOException with stream: Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+
+
+# Created at 2022-02-02T21:38:26.817
+Unexpected IOException with stream: 2022-02-02 21:38:26.815  INFO 23036 --- [           main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+
+
+# Created at 2022-02-02T21:38:27.672
+Unexpected IOException with stream: 2022-02-02 21:38:27.670  INFO 23036 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+
+
+# Created at 2022-02-02T21:38:27.754
+Unexpected IOException with stream: Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@4248e66b'
+
+
+# Created at 2022-02-02T21:38:27.765
+Unexpected IOException with stream: Property 'mapperLocations' was not specified.
+
+
+# Created at 2022-02-02T21:38:29.944
+Unexpected IOException with stream:  _ _   |_  _ _|_. ___ _ |    _ 
+
+
+# Created at 2022-02-02T21:38:29.946
+Unexpected IOException with stream: | | |\/|_)(_| | |_\  |_)||_|_\ 
+
+
+# Created at 2022-02-02T21:38:29.949
+Unexpected IOException with stream:      /               |         
+
+
+# Created at 2022-02-02T21:38:29.952
+Unexpected IOException with stream:                         3.4.2 
+
+
+# Created at 2022-02-02T21:38:32.722
+Unexpected IOException with stream: 2022-02-02 21:38:32.720  INFO 23036 --- [           main] com.itwang.config.WebMvcConfig           : 扩展消息转换器》》》》
+
+
+# Created at 2022-02-02T21:38:32.730
+Unexpected IOException with stream: 2022-02-02 21:38:32.729  INFO 23036 --- [           main] com.itwang.config.WebMvcConfig           : 消息转换器加载完毕
+
+
+# Created at 2022-02-02T21:38:32.778
+Unexpected IOException with stream: 2022-02-02 21:38:32.777  INFO 23036 --- [           main] com.itwang.config.WebMvcConfig           : 开始进行静态资源映射
+
+
+# Created at 2022-02-02T21:38:35.634
+Unexpected IOException with stream: 2022-02-02 21:38:35.632  INFO 23036 --- [           main] com.itwang.ReggieOrderApplicationTests   : Started ReggieOrderApplicationTests in 19.553 seconds (JVM running for 25.157)
+
+
+# Created at 2022-02-02T21:38:35.705
+Unexpected IOException: 5,1,com.itwang.ReggieOrderApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2022-02-02T21:38:36.719
+Unexpected IOException: 6,1,com.itwang.ReggieOrderApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2022-02-02T21:38:36.725
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.itwang.ReggieOrderApplicationTests,null,null,null
+
+
