@@ -29,6 +29,8 @@ public class RedisConfig extends CachingConfigurerSupport {
 //        redis当中key的序列化器：
         redisTemplate.setKeySerializer(new StringRedisSerializer());//便于观察Redis key
         redisTemplate.setConnectionFactory(connectionFactory);
+
+
         return redisTemplate;
     }
 
