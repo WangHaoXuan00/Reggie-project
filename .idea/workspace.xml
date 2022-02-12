@@ -7,16 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f510c4b4-7f22-44fd-872b-2f7b079f23ec" name="Changes" comment="部分接口进行数据redis缓存，还有部分未更新">
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itwang/config/RedisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwang/common/BaseContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itwang/common/BaseContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itwang/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itwang/controller/DishController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itwang/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itwang/controller/EmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itwang/controller/ShoppingCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itwang/controller/ShoppingCartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itwang/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itwang/controller/UserController.class" afterDir="false" />
-    </list>
+    <list default="true" id="f510c4b4-7f22-44fd-872b-2f7b079f23ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,7 +225,7 @@
       <workItem from="1644631304268" duration="290000" />
       <workItem from="1644631622122" duration="375000" />
       <workItem from="1644632052026" duration="4050000" />
-      <workItem from="1644636195902" duration="4539000" />
+      <workItem from="1644636195902" duration="4837000" />
     </task>
     <task id="LOCAL-00001" summary="版本1.0，未优化">
       <created>1644576954634</created>
@@ -264,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644638249905</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="部分接口进行数据redis缓存，还有部分未更新">
+      <created>1644646983712</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644646983712</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
