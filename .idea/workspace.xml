@@ -7,11 +7,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f510c4b4-7f22-44fd-872b-2f7b079f23ec" name="Changes" comment="" />
+    <list default="true" id="f510c4b4-7f22-44fd-872b-2f7b079f23ec" name="Changes" comment="部分接口进行数据redis缓存，还有部分未更新">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itwang/config/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwang/common/BaseContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itwang/common/BaseContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itwang/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itwang/controller/DishController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itwang/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itwang/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itwang/controller/ShoppingCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itwang/controller/ShoppingCartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itwang/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itwang/controller/UserController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -22,9 +34,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="whx_gavin &lt;8463937+whx-gavin@user.noreply.gitee.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="V1.0" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +53,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,6 +82,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -74,14 +95,24 @@
     <property name="jdk.selected.JAVA_MODULE" value="corretto-1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../springdataredis_demo/src/test/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15758754" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="V1.0" />
+    </force-push-targets>
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -104,7 +135,7 @@
       <command value="manifest" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringDataRedisTest.testCommon">
+  <component name="RunManager" selected="Spring Boot.ReggieOrderApplication">
     <configuration name="SpringDataRedisTest.testCommon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springdataredis_demo" />
       <option name="PACKAGE_NAME" value="" />
@@ -198,7 +229,12 @@
       <workItem from="1644402643296" duration="11312000" />
       <workItem from="1644490089980" duration="7312000" />
       <workItem from="1644539307779" duration="15128000" />
-      <workItem from="1644572469260" duration="8640000" />
+      <workItem from="1644572469260" duration="12280000" />
+      <workItem from="1644585552885" duration="1285000" />
+      <workItem from="1644631304268" duration="290000" />
+      <workItem from="1644631622122" duration="375000" />
+      <workItem from="1644632052026" duration="4050000" />
+      <workItem from="1644636195902" duration="4539000" />
     </task>
     <task id="LOCAL-00001" summary="版本1.0，未优化">
       <created>1644576954634</created>
@@ -214,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644581599119</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Redis 环境的配置新建一个RedsiTemplate(String序列化) 是的Redis的数据可视化">
+      <created>1644581980129</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644581980129</updated>
+    </task>
+    <task id="LOCAL-00004" summary="部分接口进行数据redis缓存，还有部分未更新">
+      <created>1644638249905</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644638249905</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +273,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="版本1.0，未优化" />
     <MESSAGE value="Redis 环境的配置新建一个RedsiTemplate(String序列化) 是的Redis的数据可视化" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redis 环境的配置新建一个RedsiTemplate(String序列化) 是的Redis的数据可视化" />
+    <MESSAGE value="部分接口进行数据redis缓存，还有部分未更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="部分接口进行数据redis缓存，还有部分未更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -231,6 +282,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ClassNotFoundException" package="java.lang" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.ibatis.exceptions.TooManyResultsException" package="org.apache.ibatis.exceptions" />
+          <option name="timeStamp" value="12" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

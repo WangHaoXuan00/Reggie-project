@@ -11,7 +11,7 @@ package com.itwang.common;/**
  * @Description:
  * @data 2022/1/30 TIME:12:04
  */
-/*基于ThreadLocal封装的工具类，用于保存获取当前用户的id*/
+/*基于ThreadLocal封装的工具类，用于保存获取当前用。户的id*/
 public class BaseContext {
     private static ThreadLocal<Long> threadLocal = new ThreadLocal<>();
 
