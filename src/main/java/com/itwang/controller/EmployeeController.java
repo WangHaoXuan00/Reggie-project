@@ -74,7 +74,6 @@ public class EmployeeController {
     @PostMapping
     public R<String> save(HttpServletRequest request, @RequestBody Employee employee) {
         log.info("新增员工，员工信息：{}", employee.toString());
-
         employee.setPassword(DigestUtils.md5DigestAsHex("123456".getBytes()));
         employee.setCreateTime(LocalDateTime.now());
         employee.setUpdateTime(LocalDateTime.now());

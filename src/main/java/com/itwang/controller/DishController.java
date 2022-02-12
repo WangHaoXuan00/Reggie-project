@@ -17,9 +17,12 @@ import com.itwang.service.DishService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -42,14 +45,23 @@ public class DishController {
     @Autowired
     private CategoryService categoryService;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     /*新增菜品*/
+
     @PostMapping
     public R<String> save(@RequestBody DishDto dishDto) {
         log.info(dishDto.toString());
         dishService.saveWithFlavor(dishDto);
-        return R.success("新增菜品成功");
-    }
 
+
+        Long categoryId = dishDto.getCategoryId();
+        String key = "dish_"+categoryId+"_1";
+        //清理某个分类下面的菜品缓存数据
+        redisTemplate.delete(key);
+        return R.success("新增菜品成功");
+}
     @GetMapping("/page")
     public R<Page> page(int page, int pageSize, String name) {
 //        构造分页构造器对象
@@ -67,6 +79,8 @@ public class DishController {
         BeanUtils.copyProperties(pageInfo, dishDtoPage, "records");
 
         List<Dish> records = pageInfo.getRecords();
+
+
         List<DishDto> list = records.stream().map((item) -> {
 //
             DishDto dishDto = new DishDto();
@@ -101,9 +115,17 @@ public class DishController {
     @PutMapping
     public R<String> update(@RequestBody DishDto dishDto) {
         log.info(dishDto.toString());
-
-
         dishService.updateWithFlavor(dishDto);
+
+////清理所有菜品的缓存数据
+//        Set keys = redisTemplate.keys("dish_*"); //获取所有以dish_xxx开头的key
+//        redisTemplate.delete(keys); //删除这些key
+//
+
+        //清理某个分类下面的菜品缓存数据
+        String key = "dish_" + dishDto.getCategoryId() + "_1";
+        redisTemplate.delete(key);
+
         return R.success("修改菜品成功");
     }
 
@@ -121,6 +143,20 @@ public class DishController {
 
     @GetMapping("/list")
     public R<List<DishDto>> list(Dish dish) {
+
+//        先查询redis，有数据直接返回
+        //动态构造key
+        String key = "dish_" + dish.getCategoryId() + "_" + dish.getStatus();//dish_1397844391040167938_1
+//先从redis中获取缓存数据
+        List<DishDto> dishDtoList = (List<DishDto>) redisTemplate.opsForValue().get(key);
+        if(dishDtoList != null){
+            //如果存在，直接返回，无需查询数据库
+            return R.success(dishDtoList);
+        }
+
+//如果不存在，需要查询数据库，将查询到的菜品数据缓存到Redis
+        redisTemplate.opsForValue().set(key,dishDtoList,60, TimeUnit.MINUTES);
+
         LambdaQueryWrapper<Dish> lqw = new LambdaQueryWrapper<>();
         lqw.eq(Dish::getStatus, 1);
         lqw.eq(dish.getCategoryId() != null, Dish::getCategoryId, dish.getCategoryId());
